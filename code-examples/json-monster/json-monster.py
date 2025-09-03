@@ -1,6 +1,7 @@
 import json
 import py5
 
+
 def setup():
     py5.size(600, 600)
     py5.fill(55, 71, 79)
@@ -15,5 +16,6 @@ def setup():
 
     py5.text(data[1]["common name"], 300, 300)
     py5.text(data[1]["scientific name"]["species"], 300, 325)
+
 
 py5.run_sketch()
