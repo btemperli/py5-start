@@ -1,7 +1,10 @@
 # ----------------------------
 # Transfer-Aufgabe 01.
 # Interaktiver Kreis.
-# Mögliche Musterlösung.
+#
+# Lösungsvorschlag.
+#
+# Modul Programmieren.
 # Modul Projekt Applikation.
 # ----------------------------
 import py5

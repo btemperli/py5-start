@@ -1,7 +1,10 @@
 # ----------------------------
 # Transfer-Aufgabe 02.
 # Zufällige Formen
-# Mögliche Musterlösung.
+#
+# Lösungsvorschlag.
+#
+# Modul Programmieren.
 # Modul Projekt Applikation.
 # ----------------------------
 import py5
