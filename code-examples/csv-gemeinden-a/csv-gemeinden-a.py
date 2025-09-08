@@ -19,7 +19,7 @@ def setup():
     py5.size(920, 500)
     py5.text_size(18)
 
-    # Datei auslesen und Zeile für Zeile in die Liste «data» speichern
+    # Datei auslesen und Zeile für Zeile in die Liste «sprites» speichern
     with open("neue_gemeinden_utf8.csv") as file:
         for line in file:
             zeile = line.strip().split(";")
@@ -28,7 +28,7 @@ def setup():
     print(data)
 
     del data[0]
-    # print(data)
+    # print(sprites)
 
 
 def draw():

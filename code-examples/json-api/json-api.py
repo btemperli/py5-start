@@ -16,7 +16,7 @@ def setup():
     headers = {"User-Agent": "py5-geo-demo"}  # Nominatim verlangt einen User-Agent
     response = requests.get(url, headers=headers)
 
-    # «response» als JSON interpretieren und in die Liste «data» speichern
+    # «response» als JSON interpretieren und in die Liste «sprites» speichern
     data = response.json()
 
     # Resultat ausgeben

@@ -34,7 +34,7 @@ def setup():
 
     py5.size(998, 620)
 
-    # CSV Datei auslesen und Zeile für Zeile in die Liste «data» speichern
+    # CSV Datei auslesen und Zeile für Zeile in die Liste «sprites» speichern
     with open("neue_gemeinden_utf8.csv") as file:
         for line in file:
             zeile = line.strip().split(";")
@@ -42,7 +42,7 @@ def setup():
 
     # Kopfzeile löschen
     del data[0]
-    # print(data) #Test
+    # print(sprites) #Test
 
 
 def draw():
@@ -58,7 +58,7 @@ def draw():
     # Itreation Grossrregion Schweiz
     for i in range(1, len(regions)):  # Start bei 1, da die Kopfzeile ignoriert werden soll
 
-        # Iteration data[] je Grossreegion
+        # Iteration sprites[] je Grossreegion
         vals = []
         for j in range(0, len(data)):
             if data[j][1] in regions[i]:
