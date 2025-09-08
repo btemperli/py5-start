@@ -1,3 +1,12 @@
+# ----------------------------
+# Transfer-Aufgabe 04.
+# Random Walker.
+#
+# Lösungsvorschlag.
+#
+# Modul Projekt Applikation.
+# ----------------------------
+
 from py5 import *
 import py5
 
