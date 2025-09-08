@@ -1,4 +1,9 @@
+# User-Input
+# Variante 1: Konsole
+# In dieser Variante wird der Input in der Konsole abgefragt.
+
 import py5
+
 
 def setup():
     py5.size(400, 200)

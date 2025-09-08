@@ -1,3 +1,7 @@
+# User-Input
+# Variante 2: Fenster
+# In dieser Variante wird der Input direkt im Fenster angezeigt
+
 import py5
 
 name = ""
