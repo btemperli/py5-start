@@ -15,8 +15,11 @@ Ergänzungen:
   - `$ python3 -m venv path/to/venv`
   - `$ source path/to/venv/bin/activate` (in der Konsole die Umgebung aktivieren)
   - `$ python3 -m pip install py5` (Das Programm `py5` installieren)
-- Das `main.py` kann gestartet werden, um die Umgebung zu testen. Gut möglich, dass dabei die folgenden Warnungen ausgegeben werden. Sofern das Programm läuft, kann das ignoriert werden:
-  - `WARNING: A restricted method in java.lang.System has been called`
-  - `WARNING: java.lang.System::load has been called by org.jpype.JPypeContext in an unnamed module (file:/Users/xxx/python3-venv/lib/python3.13/site-packages/org.jpype.jar)`
-  - `WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module`
-  - `WARNING: Restricted methods will be blocked in a future release unless native access is enabled`
+- Die Datei `test-py5.py` kann gestartet werden, um die Umgebung zu testen.
+  - Variante Konsole: `$ python3 test-py5.py`
+  - Variante PyCharm: Rechtsklick auf Datei &rarr; Run 'test-py5.py'
+  - Gut möglich, dass bei der Ausführung die folgenden Warnungen ausgegeben werden. Sofern das Programm läuft, kann das ignoriert werden:
+    - `WARNING: A restricted method in java.lang.System has been called`
+    - `WARNING: java.lang.System::load has been called by org.jpype.JPypeContext in an unnamed module (file:/Users/xxx/python3-venv/lib/python3.13/site-packages/org.jpype.jar)`
+    - `WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module`
+    - `WARNING: Restricted methods will be blocked in a future release unless native access is enabled`
