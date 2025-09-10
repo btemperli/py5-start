@@ -2,11 +2,64 @@
 
 Dies ist ein Beispiel für die Nutzung von https://py5coding.org/
 
-## installation
+## vorbereitung
+
+Für die Installation von `py5` benötigst du Java und Python. In der Konsole (windows: `cmd`, macOS: `terminal`) kannst du folgendes eingeben:
+
+    $ python --version
+    $ java --version
+
+Falls `$ python --version` nicht gefunden wird, probiere es mit `$ python3 --version` 
+
+Die Ausgabe müsste anzeigen, ob die Programme installiert sind und in welcher Version, oder ob die Befehle nicht bekannt sind: in diesem Fall musst du die beiden Programme installieren.
+
+### Installation Java (17+)
+
+https://www.oracle.com/java/technologies/downloads/#jdk24-windows
+Installation befolgen
+
+### Installation Python (3.10+)
+
+#### Windows
+https://www.python.org/downloads/
+
+Berücksichtige: bei der Installation bitte auswählen, dass "Add Python to PATH" ausgewählt wird. Nur so ist im Nachhinein `python` direkt als Programm aufrufbar.
+
+#### Mac OS
+Auf einem Apple-Gerät ist es leider etwas komplizierter. Mehr Informationen gibt es beispielsweise hier:
+https://mac.install.guide/python/update
+
+Wenn du Python über die normale Python-Webseite herunterlädst und installierst, wird das python-Programm wahrscheinlich hier abgelegt:
+
+    /Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+
+Pip3 müsste entsprechend hier liegen:
+
+    /Library/Frameworks/Python.framework/Versions/3.13/bin/pip3
+
+Du kannst direkt diese Programme nutzen und entweder direkt darauf verlinken:
+
+    /Library/Frameworks/Python.framework/Versions/3.13/bin/pip3 install py5
+
+anstatt
+
+    pip3 install py5
+
+Eine wiederum komplizierter Version ist die Installation mit `homebrew`: https://brew.sh/
+
+## installation py5
 
 Eine genaue Anleitung existiert hier: https://py5coding.org/content/install.html#
 
-Ergänzungen:
+
+## installation IDE
+
+Für die Programmierung brauchst du nun eine Entwicklungsumgebung, in der du Code schreiben kannst und von der aus du dein Programm direkt starten kannst.
+- Variante A: Visual Studio Code. Gratis, aber es braucht noch die Extension `Python`.
+- Variante B: PyCharm. Als Studierende Person gratis, man muss sich aber bei jetbrains registrieren.
+
+
+## Ergänzungen
 
 - Im Programm `PyCharm` muss unbedingt die Python-Version ausgewählt werden, die für die Installation von py5 genutzt wurde.
   - PyCharm &rarr; Settings &rarr; Python Interpreter
