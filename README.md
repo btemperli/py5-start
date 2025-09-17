@@ -2,7 +2,7 @@
 
 Dies ist ein Beispiel für die Nutzung von https://py5coding.org/
 
-Installationsanleitung & Vorbereitung
+## Vorbereitung
 
 Für die Installation von `py5` benötigst du Java und Python. In der Konsole (windows: `cmd`, macOS: `terminal`) kannst du folgendes eingeben:
 
@@ -12,6 +12,8 @@ Für die Installation von `py5` benötigst du Java und Python. In der Konsole (w
 Falls `$ python --version` nicht gefunden wird, probiere es mit `$ python3 --version` 
 
 Die Ausgabe müsste anzeigen, ob die Programme installiert sind und in welcher Version, oder ob die Befehle nicht bekannt sind: in diesem Fall musst du die beiden Programme installieren.
+
+---
 
 <details>
 
@@ -23,6 +25,8 @@ https://www.oracle.com/java/technologies/downloads/#jdk24-windows
 Installation befolgen
 
 </details>
+
+---
 
 <details>
 
@@ -64,11 +68,15 @@ Eine wiederum komplizierter Version ist die Installation mit `homebrew`: https:/
 
 </details>
 
+---
+
 ## installation py5
 
     pip3 install py5
 
 Eine genaue Anleitung existiert hier: https://py5coding.org/content/install.html#
+
+---
 
 <details>
 
@@ -81,6 +89,64 @@ Für die Programmierung brauchst du nun eine Entwicklungsumgebung, in der du Cod
 - Variante B: PyCharm. Als Studierende Person gratis, man muss sich aber bei jetbrains registrieren.
 
 </details>
+
+---
+
+## Fehlermeldungen
+
+Hier eine Auflistung von Problemen, die auftauchen könnten und Ansätze, wie diese behoben werden.
+
+<details>
+
+<summary>Exit code -1073741819 (0xC0000005) &rarr; Windows</summary>
+
+### Auftauchen
+
+- `import py5` in einem `.py`-Programm verwenden und das Programm starten
+- `python` in der Konsole starten, dann `import py5` ausführen
+
+In beiden Fällen bricht das Programm ab mit dem oben genannten Fehler.
+
+### Problem
+
+Eventuell liegt es an der installierten Version von Python.
+Es kann sein, dass das Problem bei `3.13` und auch `3.12` auftaucht.
+
+### Problemlösung
+
+- (die aktuelle Python-Version deinstallieren)
+- Python `3.11` [herunterladen](https://www.python.org/downloads/#:~:text=Looking%20for%20a%20specific%20release%3F) und installieren
+
+</details>
+
+<details>
+
+<summary>raise JVMNotFoundException("No JVM shared library file ({0}) "</summary>
+
+### Auftauchen
+
+- `import py5` in einem `.py`-Programm verwenden und das Programm starten
+- `python` in der Konsole starten, dann `import py5` ausführen
+
+In beiden Fällen bricht das Programm ab mit dem oben genannten Fehler, ergänzt durch Informationen, wo das Problem genau auftaucht
+- `jpype.startJVM()`
+- `jvmpath = getDefaultJVMPath()`
+- `return finder.get_jvm_path()`
+- `jpype._jvmfinder.JVMNotFoundException: No JVM shared library file (jvm.dll) found. Try setting up the JAVA_HOME environment variable properly.`
+
+### Problemlösung
+
+Die `JAVA_HOME`-Variable fehlt bei den Systemumgebungsvariablen. Dort werden alle Programme als "Variable" aufgelistet, so dass andere Programme auf diese Programme zugreifen können.
+
+1. Wie du die `JAVA_HOME`-Variable manuell einfügen kannst: [Umgebungsvariablen anpassen](https://learn.jamf.com/de-DE/bundle/technical-articles/page/Configuring_JAVA_HOME_and_JRE_HOME_Environment_Variables_on_a_Windows_Server.html)
+2. Wie du `JAVA_HOME` anschliessend in die globale `PATH`-Variable hinzufügen kannst: [Path-Variable bearbeiten](https://www.java.com/de/download/help/path.html). Der neue Eintrag (neue Zeile einfügen) sollte lauten: `%JAVA_HOME%\bin`
+3. Bevor du nun weiterfahrst, musst du `cmd` neu starten und im schlimmsten Fall `pyCharm` neu installieren. Vielleicht reicht aber auch ein Neustart.
+4. Umgebungsvariablen testen: `$ echo %JAVA_HOME%` in der Kommandozeile ausführen
+5. `import py5` in der Python-Umgebung oder in einer Python-Datei ausführen.
+
+</details>
+
+---
 
 ## Ergänzungen
 
