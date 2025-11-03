@@ -41,9 +41,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Öffne Port für noVNC
 EXPOSE 6080
 
-# Standardbenutzer verwenden
-USER 1000
-
 # Container soll weiterlaufen
 CMD ["/bin/bash", "-c", "tail -f /dev/null"]
 
