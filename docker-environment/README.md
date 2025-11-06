@@ -8,9 +8,11 @@
 2. "Docker Desktop" installieren
 3. Diesen Ordner `docker-environment` herunterladen und bei einem zugänglichen Pfad ablegen
 4. Via Konsole<sup>[1](#fn1)</sup> zum Pfad navigieren<sup>[2](#fn2)</sup>: `cd pfad/zum/projekt/docker-environment`
-5. Die Datei `start.sh` in der Konsole<sup>[1](#fn1)</sup> ausführen: `./start.sh`
+5. Nur Mac: Die Datei `start.sh` in der Konsole<sup>[1](#fn1)</sup> ausführen: `./start.sh`
    (dies dauert gut und gerne 2-3 Minuten)
-6. Am Ende sollte unter anderem die Ausgabe `✅ Container läuft!` erscheinen
+6. Nur Windows: Die Datei `start-cmd.sh` in der Konsole<sup>[1](#fn1)</sup> ausführen: `./start-cmd.sh`
+   (dies dauert gut und gerne 2-3 Minuten)
+7. Am Ende sollte unter anderem die Ausgabe `✅ Container läuft!` erscheinen
 
 
 ## Testen
