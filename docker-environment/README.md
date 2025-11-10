@@ -8,11 +8,11 @@
 2. "Docker Desktop" installieren
 3. Diesen Ordner `docker-environment` herunterladen und bei einem zugänglichen Pfad ablegen
 4. Via Konsole<sup>[1](#fn1)</sup> zum Pfad navigieren<sup>[2](#fn2)</sup>: `cd pfad/zum/projekt/docker-environment`
-5. Nur Mac: Die Datei `start.sh` in der Konsole<sup>[1](#fn1)</sup> ausführen: `./start.sh`
+5. *Nur Windows:* Doppelklick auf die Datei `start.sh`. Damit sollte der Docker-Container erstellt werden und direkt in der Docker-App sichtbar werden. 
+   Die Installation ist somit abgeschlossen.
+6. *Nur Mac:* Die Datei `start.sh` in der Konsole<sup>[1](#fn1)</sup> ausführen: `./start.sh`
    (dies dauert gut und gerne 2-3 Minuten)
-6. Nur Windows: Die Datei `start-cmd.sh` in der Konsole<sup>[1](#fn1)</sup> ausführen: `./start-cmd.sh`
-   (dies dauert gut und gerne 2-3 Minuten)
-7. Am Ende sollte unter anderem die Ausgabe `✅ Container läuft!` erscheinen
+7. *Nur Mac:* Am Ende sollte in der Konsole unter anderem die Ausgabe `✅ Container läuft!` erscheinen
 
 
 ## Testen
@@ -71,10 +71,36 @@ Sobald du bei dir lokal im Ordner eine Datei erstellst, ist diese auch direkt in
 
 ### Problemlösung
 
-tbd
-
+1. Überprüfe in der Docker-App die `Details` vom Container `py5-vnc-container` (3 Punkte neben dem Start-Knopf: `-> View Details`).
+2. Wechsle zum Reiter `Bind mounts`.
+3. Hier sollte sichtbar sein, wo der Ordner (linke Seite) auf deinem Computer liegt und wo er (rechte Seite) in der Docker-Umgebung zu finden ist.
+4. Wende dich an den Dozenten, falls du mit diesen Informationen nichts anfangen kannst.
 
 </details>
+
+<details>
+
+<summary> <code>python test.py</code> führt zu <code>py5 not found</code>-Fehler</summary>
+
+### Auftauchen
+
+`Terminal Emulator` starten, der Befehl `python test.py` gibt eine Fehlermeldung: `ModuleNotFound: py5`.
+
+### Problem
+
+Python, so wie es ausgeführt wurde, ist in der "echten" Variante gestartet, `py5` wurde aber nur in der virtuellen Umgebung hinzugefügt.
+Du kannst mit `echo $PATH` überprüfen, ob die virtuelle Python-Umgebung eingebunden wurde: die Ausgabe müsste zuvorderst mit `/opt/venv/bin:` starten.
+
+### Problemlösung
+
+1. Stoppe den Docker-Container in der Docker-App.
+2. Lösche den Docker-Container in der Docker-App.
+3. Starte den Container neu: `Installieren -> Punkt 5 / 7`.
+
+Falls das nichts bringt: wechsle von `python test.py` zu `/opt/venv/bin/python test.py`.
+
+</details>
+
 ---
 
 <br><a name="fn1">1</a> Windows: *cmd* / Mac: *Terminal*
