@@ -52,6 +52,29 @@ Du kannst direkt im Programm den Container starten und stoppen.
 Falls du die Datei `start.sh` erneut ausführen willst, stoppst du den Container davor und entfernst diesen.
 <small>Beim erneuten Ausführen der Datei dauert es nun übrigens nur noch ein paar Sekunden und nicht mehr 2-3 Minuten.</small>
 
+
+## Probleme
+
+<details>
+
+<summary>Der Ordner workspace ist leer</summary>
+
+### Auftauchen
+
+`Terminal Emulator` starten, der Befehl `ls` gibt nur das Dokument `requirements.txt` aus. Alle anderen Dateien aus diesem Ordner sind nicht vorhanden.
+
+### Problem
+
+Der lokale Ordner (Ausgang: `docker-environment`) ist nicht korrekt mit der Docker-Umgebung synchronisiert.
+Normalerweise wird der Ordner mit dem Ordner `workspace` in der Docker-Umgebung live synchronisiert.
+Sobald du bei dir lokal im Ordner eine Datei erstellst, ist diese auch direkt in der Docker-Umgebung vorhanden.
+
+### Problemlösung
+
+tbd
+
+
+</details>
 ---
 
 <br><a name="fn1">1</a> Windows: *cmd* / Mac: *Terminal*
