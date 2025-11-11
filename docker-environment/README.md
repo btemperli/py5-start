@@ -2,6 +2,22 @@
 
 -- beta-version --
 
+## Schema
+
+=============================== Entwicklungsumgebung ===============================
+
++----------------------------------+          +------------------------------------+
+|  Lokaler Rechner                 |          |  Docker-Container (Linux)          |
+|  ------------------------------  |          |  --------------------------------  |
+|  IDE (z. B. PyCharm)             |   Code   |  Python + py5                      |
+|  - Bearbeiten von Programmen     | <------> |  - Ausführung des Programms        |
+|  - Projekte im lokalen Ordner    |   Sync   |  - Zugriff über Browser (z. B.     |
+|    gespeichert                   |   via    |    http://localhost:6080)          |
+|                                  |  Volume  |                                    |
+|  Browser (z. B. Firefox)         |          |                                    |
+|  - Verbindung zur Docker-App     | -------> |  - Weboberfläche bereitgestellt    |
++----------------------------------+          +------------------------------------+
+
 ## Installieren
 
 1. Lade "Docker Desktop" für dein Betriebssystem von der offiziellen [Docker-Seite](https://docs.docker.com/get-started/get-docker/) herunter.

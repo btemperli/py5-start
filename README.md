@@ -2,14 +2,30 @@
 
 Dies ist ein Beispiel für die Nutzung von https://py5coding.org/
 
+## Welche Variante?
+
+Es gibt 2 Möglichkeiten, py5 auf deinen Computer zu bringen:
+
+- Variante A: lokale Installation.
+  <br>Du installierst bei dir auf dem Computer die Programme `python` und die Library `py5`. In einer Entwicklungsumgebung bearbeitest du deine Programme
+  und kannst diese auch gleich starten, testen und ausprobieren.
+- Variante B: virtuelle Installation.
+  <br>Die relevanten Programme `python` und `py5` laufen in einer virutellen Umgebung (Docker-Umgebung) auf deinem Computer.
+  Du entwickelst deine Programme bei dir lokal in einer Entwicklungsumgebung. Die Dateien sind dabei direkt mit der virtuellen Umgebung verknüpft.
+  In der virtuellen Umgebung kannst du deine erstellten Programme starten, testen und ausprobieren.
+
+Für Variante B wählst du die [Docker-Installation](tree/master/docker-environment).
+
+Für Variante A kannst du gleich hier fortfahren.
+
 ## Vorbereitung
 
 Für die Installation von `py5` benötigst du Java und Python. In der Konsole (windows: `cmd`, macOS: `terminal`) kannst du folgendes eingeben:
 
-    $ python --version
-    $ java --version
+    python --version
+    java --version
 
-Falls `$ python --version` nicht gefunden wird, probiere es mit `$ python3 --version` 
+Falls `python --version` nicht gefunden wird, probiere es mit `python3 --version` 
 
 Die Ausgabe müsste anzeigen, ob die Programme installiert sind und in welcher Version, oder ob die Befehle nicht bekannt sind: in diesem Fall musst du die beiden Programme installieren.
 
