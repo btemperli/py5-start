@@ -4,19 +4,28 @@
 
 ## Schema
 
-=============================== Entwicklungsumgebung ===============================
+      =============================== Entwicklungsumgebung ===============================
+      
+      +----------------------------------+          +------------------------------------+
+      |  Lokaler Rechner                 |          |  Docker-Container (Linux)          |
+      |  ------------------------------  |          |  --------------------------------  |
+      |  IDE (z. B. PyCharm)             |   Code   |  Python + py5                      |
+      |  - Bearbeiten von Programmen     | <------> |  - Ausführung des Programms        |
+      |  - Projekte im lokalen Ordner    |   Sync   |  - Zugriff über Browser            |
+      |    gespeichert                   |   via    |    (z. B. http://localhost:6080)   |
+      |                                  |  Volume  |                                    |
+      |  Browser (z. B. Firefox)         |          |                                    |
+      |  - Verbindung zur Docker-App     | -------> |  - Weboberfläche bereitgestellt    |
+      +----------------------------------+          +------------------------------------+
 
-+----------------------------------+          +------------------------------------+
-|  Lokaler Rechner                 |          |  Docker-Container (Linux)          |
-|  ------------------------------  |          |  --------------------------------  |
-|  IDE (z. B. PyCharm)             |   Code   |  Python + py5                      |
-|  - Bearbeiten von Programmen     | <------> |  - Ausführung des Programms        |
-|  - Projekte im lokalen Ordner    |   Sync   |  - Zugriff über Browser (z. B.     |
-|    gespeichert                   |   via    |    http://localhost:6080)          |
-|                                  |  Volume  |                                    |
-|  Browser (z. B. Firefox)         |          |                                    |
-|  - Verbindung zur Docker-App     | -------> |  - Weboberfläche bereitgestellt    |
-+----------------------------------+          +------------------------------------+
+### Legende
+
+
+      <------> Gemeinsamer synchronisierter Projektordner
+      -------> Zugriff über localhost via Browser
+
+---
+
 
 ## Installieren
 

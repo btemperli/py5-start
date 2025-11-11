@@ -14,7 +14,7 @@ Es gibt 2 Möglichkeiten, py5 auf deinen Computer zu bringen:
   Du entwickelst deine Programme bei dir lokal in einer Entwicklungsumgebung. Die Dateien sind dabei direkt mit der virtuellen Umgebung verknüpft.
   In der virtuellen Umgebung kannst du deine erstellten Programme starten, testen und ausprobieren.
 
-Für Variante B wählst du die [Docker-Installation](tree/master/docker-environment).
+Für Variante B wählst du die [Docker-Installation](docker-environment).
 
 Für Variante A kannst du gleich hier fortfahren.
 
