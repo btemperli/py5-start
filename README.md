@@ -39,7 +39,7 @@ Die Ausgabe müsste anzeigen, ob die Programme installiert sind und in welcher V
 
 ### Installation Java (17+)
 
-https://www.oracle.com/java/technologies/downloads/#jdk24-windows
+https://www.oracle.com/java/technologies/downloads/#jdk25-windows
 Installation befolgen
 
 </details>
