@@ -1,6 +1,8 @@
-# py5-example
-
-Dies ist ein Beispiel für die Nutzung von https://py5coding.org/
+# Py5: how-to-start
+ 
+- Installationsanleitungen für https://py5coding.org/
+- Beispiele für https://py5coding.org/
+- Hilfestellungen bei Fehlern & Problemen
 
 ## Welche Variante?
 
